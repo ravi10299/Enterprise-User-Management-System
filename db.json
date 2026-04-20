@@ -1,60 +1,32 @@
 {
   "users": [
     {
-      "name": "ravi",
-      "age": 27,
-      "city": "varanasi ",
+      "name": "rohit",
+      "age": 38,
+      "city": "mumbai",
       "isActive": true,
-      "id": "FFvEXHHsK_o"
+      "id": "Ze-D6RH7qHk"
     },
     {
-      "name": "shashi",
-      "age": 26,
-      "city": "Chandauli ",
-      "isActive": true,
-      "id": "chq4_pvQ3nw"
-    },
-    {
-      "name": "ravindra",
-      "age": 27,
-      "city": "bhadoi",
-      "isActive": true,
-      "id": "RzXE3M7kAK4"
-    },
-    {
-      "name": "prachi singh",
-      "age": 25,
-      "city": "rajatalab",
-      "isActive": true,
-      "id": "84ayuvFfuis"
-    },
-    {
-      "name": "deepshikh",
-      "age": 26,
-      "city": "mirzmurad",
-      "isActive": true,
-      "id": "waZOXFj2q98"
-    },
-    {
-      "name": "Abhishek ",
-      "age": 28,
-      "city": "gangapur",
-      "isActive": true,
-      "id": "LX0qxSCK55o"
-    },
-    {
-      "name": "shruti patel",
-      "age": 24,
-      "city": "varanasi ",
-      "isActive": true,
-      "id": "FB5uGJWgW0w"
-    },
-    {
-      "name": "wageessh",
-      "age": 34,
+      "name": "virat",
+      "age": 36,
       "city": "delhi",
       "isActive": true,
-      "id": "BHxRHP9gIuY"
+      "id": "UclcEy6MrcI"
+    },
+    {
+      "name": "msd Dhoni ",
+      "age": 44,
+      "city": "ranchi ",
+      "isActive": true,
+      "id": "sdc8wCF0Sp0"
+    },
+    {
+      "name": "",
+      "age": 0,
+      "city": "",
+      "isActive": false,
+      "id": "Rfy-PTY-JkY"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
