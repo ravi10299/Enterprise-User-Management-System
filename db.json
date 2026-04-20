@@ -1,0 +1,61 @@
+{
+  "users": [
+    {
+      "name": "ravi",
+      "age": 27,
+      "city": "varanasi ",
+      "isActive": true,
+      "id": "FFvEXHHsK_o"
+    },
+    {
+      "name": "shashi",
+      "age": 26,
+      "city": "Chandauli ",
+      "isActive": true,
+      "id": "chq4_pvQ3nw"
+    },
+    {
+      "name": "ravindra",
+      "age": 27,
+      "city": "bhadoi",
+      "isActive": true,
+      "id": "RzXE3M7kAK4"
+    },
+    {
+      "name": "prachi singh",
+      "age": 25,
+      "city": "rajatalab",
+      "isActive": true,
+      "id": "84ayuvFfuis"
+    },
+    {
+      "name": "deepshikh",
+      "age": 26,
+      "city": "mirzmurad",
+      "isActive": true,
+      "id": "waZOXFj2q98"
+    },
+    {
+      "name": "Abhishek ",
+      "age": 28,
+      "city": "gangapur",
+      "isActive": true,
+      "id": "LX0qxSCK55o"
+    },
+    {
+      "name": "shruti patel",
+      "age": 24,
+      "city": "varanasi ",
+      "isActive": true,
+      "id": "FB5uGJWgW0w"
+    },
+    {
+      "name": "wageessh",
+      "age": 34,
+      "city": "delhi",
+      "isActive": true,
+      "id": "BHxRHP9gIuY"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

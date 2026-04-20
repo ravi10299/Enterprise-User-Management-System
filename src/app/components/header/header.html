@@ -1,0 +1,13 @@
+<header class="header">
+  <div class="title">ANGULAR REST API CRUD</div>
+
+  <div class="search-box">
+    <input
+      type="text"
+      placeholder="Search name age and city"
+      [value]="searchUser()"
+      (input)="searchUser.set($event.target.value)"
+    />
+    <button (click)="handleOnSearch()">Serach</button>
+  </div>
+</header>

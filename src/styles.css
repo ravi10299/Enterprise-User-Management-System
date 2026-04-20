@@ -1,1 +1,358 @@
-/* You can add global styles to this file, and also import other style files */
+/* ================= GLOBAL ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f5f7fb;
+  padding: 15px;
+}
+
+/* ================= HEADER ================= */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  padding: 15px 20px;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.search-box {
+  display: flex;
+  gap: 10px;
+}
+
+.search-box input {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  width: 200px;
+}
+
+.search-box button {
+  padding: 8px 12px;
+  border: none;
+  background: white;
+  color: #4facfe;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  background: #e6f7ff;
+}
+
+/* ================= TOTAL USERS ================= */
+.total-users {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+.total-users span {
+  background: #4facfe;
+  color: white;
+  padding: 6px 15px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+/* ================= FORM ================= */
+.form-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.form-group input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #4facfe;
+  box-shadow: 0 0 5px rgba(79, 172, 254, 0.4);
+}
+
+/* Checkbox */
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Button */
+.form-container button {
+  flex: 1 1 100%;
+  padding: 10px;
+  border: none;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-container button:hover {
+  transform: scale(1.05);
+}
+
+/* ================= TABLE ================= */
+.user-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.user-table thead {
+  background: #4facfe;
+  color: white;
+}
+
+.user-table th,
+.user-table td {
+  padding: 12px;
+  text-align: center;
+}
+
+.user-table tbody tr:hover {
+  background: #f1faff;
+}
+
+/* Buttons */
+.edit-btn {
+  background: #ffc107;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background: #ff4d4f;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .form-group {
+    flex: 1 1 45%; /* 2 inputs per row */
+  }
+
+  .search-box input {
+    width: 150px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .search-box input {
+    width: 100%;
+  }
+
+  .search-box button {
+    width: 100%;
+  }
+
+  .form-group {
+    flex: 1 1 100%; /* 1 per row */
+  }
+
+  .form-container {
+    padding: 15px;
+  }
+
+  .user-table th,
+  .user-table td {
+    padding: 8px;
+    font-size: 12px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .title {
+    font-size: 16px;
+  }
+
+  .total-users span {
+    font-size: 14px;
+    padding: 5px 10px;
+  }
+
+  .form-container button {
+    font-size: 14px;
+  }
+}
+
+
+
+/* ================= HEADER HOVER ================= */
+.header {
+  transition: 0.3s;
+}
+
+.header:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ================= SEARCH ================= */
+.search-box input:hover {
+  box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+}
+
+.search-box button:hover {
+  background: #e6f7ff;
+  transform: scale(1.05);
+}
+
+/* ================= TOTAL USERS ================= */
+.total-users span {
+  transition: 0.3s;
+}
+
+.total-users span:hover {
+  transform: scale(1.08);
+  box-shadow: 0 5px 15px rgba(79, 172, 254, 0.4);
+}
+
+/* ================= FORM ================= */
+.form-container {
+  transition: 0.3s;
+}
+
+.form-container:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Input Hover */
+.form-group input:hover {
+  border-color: #4facfe;
+}
+
+/* ================= BUTTON ================= */
+.form-container button {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Ripple Effect */
+.form-container button::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+}
+
+.form-container button:hover::after {
+  width: 200px;
+  height: 200px;
+}
+
+/* ================= TABLE ================= */
+.user-table tbody tr {
+  transition: 0.3s;
+}
+
+.user-table tbody tr:hover {
+  background: #f1faff;
+  transform: scale(1.01);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* ================= BUTTONS ================= */
+.edit-btn,
+.delete-btn {
+  transition: all 0.3s ease;
+}
+
+/* Edit Button Hover */
+.edit-btn:hover {
+  background: #ffb300;
+  transform: translateY(-2px) scale(1.1);
+  box-shadow: 0 5px 10px rgba(255, 193, 7, 0.4);
+}
+
+/* Delete Button Hover */
+.delete-btn:hover {
+  background: #e60023;
+  transform: translateY(-2px) scale(1.1);
+  box-shadow: 0 5px 10px rgba(255, 77, 79, 0.4);
+}
+
+/* ================= CARD STYLE (if you switch later) ================= */
+.user-card {
+  transition: 0.3s;
+}
+
+.user-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}

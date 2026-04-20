@@ -1,0 +1,27 @@
+/* .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right, #5a2d82, #7b3fa0);
+  padding: 15px 20px;
+  color: white;
+  border-radius: 5px 5px 0 0;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-box input {
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+} */

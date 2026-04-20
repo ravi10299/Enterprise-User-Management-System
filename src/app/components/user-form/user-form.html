@@ -1,0 +1,55 @@
+<div class="form-container">
+  <div class="form-group">
+    <label>Name</label>
+    <input
+      type="text"
+      placeholder="Enter name"
+      [value]="name()"
+      (input)="name.set($event.target.value)"
+      required
+    />
+  </div>
+
+  <div class="form-group">
+    <label>Age</label>
+    <input
+      type="number"
+      placeholder="Age"
+      [value]="age()"
+      (input)="age.set($event.target.valueAsNumber)"
+      required
+    />
+  </div>
+
+  <div class="form-group">
+    <label>City</label>
+    <input
+      type="text"
+      placeholder="Enter city"
+      [value]="city()"
+      (input)="city.set($event.target.value)"
+      required
+    />
+  </div>
+
+  <div class="form-group checkbox-group">
+    <label>
+      <input
+        type="checkbox"
+        [checked]="isActive()"
+        (change)="isActive.set(checkbox.checked)"
+        #checkbox
+      />
+      Active User
+    </label>
+  </div>
+
+  <button (click)="handleOnSubmitForm()">{{ exitUserId() ? ' Udate User' : '+ Add User' }}</button>
+</div>
+
+<app-user-tables
+  [receiceUserData]="userData()"
+  [serachUserData]="filteredUser()"
+  (editUserData)="handelOnEditUser($event)"
+  (deleteUserById)="handleOnDelete($event)"
+></app-user-tables>

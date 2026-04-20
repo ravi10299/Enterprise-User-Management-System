@@ -1,12 +1,19 @@
 import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Header } from './components/header/header';
+import { UserForm } from './components/user-form/user-form';
+import { UserTables } from './components/user-tables/user-tables';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [Header, UserForm],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
 })
 export class App {
-  protected readonly title = signal('angular-rest-api-crud');
+  searchUserName = signal<string>('');
+
+  handleOnSerach(name: string) {
+    this.searchUserName.set(name);
+    // console.log(this.searchUserName());
+  }
 }
