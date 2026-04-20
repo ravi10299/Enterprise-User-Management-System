@@ -1,12 +1,13 @@
 <header class="header">
-  <div class="title">/Enterprise User Management System</div>
+  <div class="title"><i class="fa-solid fa-user"></i> Enterprise User Management System</div>
   <div class="search-box">
     <input
       type="text"
-      placeholder="Search name age and city"
+      placeholder="Search by name, age, or city"
       [value]="searchUser()"
       (input)="searchUser.set($event.target.value)"
+      class="search-input"
     />
-    <button (click)="handleOnSearch()">Serach</button>
+    <button (click)="handleOnSearch()" class="search-button">Search</button>
   </div>
 </header>

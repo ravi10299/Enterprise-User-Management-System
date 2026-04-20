@@ -4,7 +4,7 @@
       "name": "rohit",
       "age": 38,
       "city": "mumbai",
-      "isActive": true,
+      "isActive": false,
       "id": "Ze-D6RH7qHk"
     },
     {
@@ -20,13 +20,6 @@
       "city": "ranchi ",
       "isActive": true,
       "id": "sdc8wCF0Sp0"
-    },
-    {
-      "name": "",
-      "age": 0,
-      "city": "",
-      "isActive": false,
-      "id": "Rfy-PTY-JkY"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
