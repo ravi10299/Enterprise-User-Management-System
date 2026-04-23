@@ -20,7 +20,7 @@ export class UserTables {
   handleOnDelete(users: Users) {
     this.deleteUserById.emit(users);
   }
-  handeOnStatus(users: Users) {
+  handleOnStatus(users: Users) {
     this.patchWithChangeStatus.emit(users);
   }
 }

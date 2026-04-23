@@ -20,8 +20,12 @@
           <td>{{ user.age }}</td>
           <td>{{ user.city }}</td>
           <td>
-            <button (click)="handeOnStatus(user)">
-              {{ user.isActive ? 'Active' : 'inActive' }}
+            <button
+              class="edit-btn"
+              [style.backgroundColor]="user.isActive ? 'green' : 'red'"
+              (click)="handleOnStatus(user)"
+            >
+              {{ user.isActive ? 'Active' : 'Inactive' }}
             </button>
           </td>
 
