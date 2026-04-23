@@ -19,7 +19,11 @@
           <td>{{ user.name }}</td>
           <td>{{ user.age }}</td>
           <td>{{ user.city }}</td>
-          <td>{{ user.isActive ? 'Active' : 'inActive' }}</td>
+          <td>
+            <button (click)="handeOnStatus(user)">
+              {{ user.isActive ? 'Active' : 'inActive' }}
+            </button>
+          </td>
 
           <td>
             <button class="edit-btn" (click)="handleOnEdit(user)">Edit</button>

@@ -27,8 +27,8 @@ export class UserService {
   }
 
   //patch mapping...
-  patchUser(id: number, status: boolean): Observable<Users> {
-    return this.http.patch<Users>(`${this.apiurl}/${id}`, { status });
+  patchUser(id: number, isActive: boolean): Observable<Users> {
+    return this.http.patch<Users>(`${this.apiurl}/${id}`, { isActive });
   }
 
   //delete mapping...

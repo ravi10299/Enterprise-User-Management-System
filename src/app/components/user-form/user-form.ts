@@ -92,6 +92,14 @@ export class UserForm {
     }
   }
 
+  handleOnStatus(users: Users) {
+    this.userService.patchUser(users.id!, !users.isActive).subscribe(() => {
+      this.userData.update((list) =>
+        list.map((u) => (u.id === users.id ? { ...u, isActive: !u.isActive } : u)),
+      );
+    });
+  }
+
   handleOnDelete(users: Users) {
     const confirmToDelete = confirm('this user to deleted :' + users.name);
     if (confirmToDelete) {
